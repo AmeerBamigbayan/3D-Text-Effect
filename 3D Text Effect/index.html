@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+          <meta charset="utf-8">
+           <title>3D Text Effect</title>
+           <link rel="stylesheet" href="style.css">
+
+  </head>
+     <body>
+          <div id="text" data-text="Ameer Bamigbayan">Ameer Bamigbayan</div>
+
+          <script type="text/javascript">
+              var text = document.getElementById("text")
+              var shadow = '';
+              for (var i = 0; i < 30; i++)
+              {
+                  shadow += (shadow? ',':'')+ -i*1+'px '+ i*1+ 'px 0 #d9d9d9';
+              }
+              text.style.textShadow = shadow;
+        
+        </script>
+
+          </script>
+     </body>
+
+
+</html>
